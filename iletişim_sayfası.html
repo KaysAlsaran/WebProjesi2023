@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="iletişim">
+    <header>
+        <a href="#" class="logo">ِِِِِKays</a>
+        <nav class="navigation">
+            <a href="index.html">hakkında</a>
+            <a href="şehrim.html">şehrim</a>
+            <a href="mirasımız.html">mirasımız</a>
+            <a href="eğitim_bilgiler.html">eğitim</a>
+            <a href="ilgi_alanlar.html">ilgi alanlar</a>
+            <a href="iletişim_sayfası.html">iletişim</a>
+            <a href="login.html">login</a>
+        </nav>
+    </header> 
+   
+    <p class="head2">aşadaki form doldurun lütfen</p>
+    <div class="iletişim-main">
+        <form action="iletisim.php" name="form" method="post" onsubmit="return funk()">
+            <table class="first">
+                <tr>
+                    <td>AD</td>
+                    <td>:</td>
+                    <td class="text"><input type="text" name="ad" placeholder="ad..."></td>
+                </tr>
+                <tr> 
+                    <td>SOYAD</td>
+                    <td>:</td>
+                    <td class="text"><input type="text" name="soyad" placeholder="soyad..."></td>
+                </tr>
+                <tr>
+                    <td>EMAİL</td>
+                    <td>:</td>
+                    <td class="text"><input type="text" name="eposta" placeholder="email giriniz..."></td> 
+                </tr>
+                <tr>
+                    <td>ŞİFRE</td>
+                    <td>:</td>
+                    <td class="text"><input type="password" name="sifre" placeholder="şifre..."></td>
+                </tr>
+                <tr>
+                    <td>OKUL</td>
+                    <td>:</td>
+                    <td class="text"><input type="text" name="universite"  list="universiteler" placeholder="okul seçiniz..."></td>
+                </tr>
+            </table>
+            <div class="radio">
+                <input type="radio" name="cinsiyet" value="ERKEK"> Erkek
+                <span></span>
+                <input type="radio" name="cinsiyet" value="KADIN"> Kadın
+            </div>
+
+            <datalist   id="universiteler">
+                <option value="sau">Sakarya Üniversitesi</option>
+                <option value="subu">Sakarya Uygulamalı Bilimler Üniversitesi</option>
+                <option value="itu">İstanbul Teknik Üniversitesi</option>
+            </datalist><br>
+
+            <select name="form-tipi" id="form-tipi" class="option">
+                <option value="belirtilmedi">Please Select</option>
+                <option value="öneri" id="oneri">öneri</option>
+                <option value="soru" id="soru">soru</option>
+                <option value="şikayet" id="sikatet">şikayet</option>
+                <option value="belirtilmedi" id="diger">diğer</option>
+            </select><br>
+
+            <table class="second">
+    
+            </table>
+
+            <textarea name="mesaj" class="form-control" ></textarea> <br> 
+            <div class="button">  
+                <input type="submit" value="gönder" id="btnGonder" class="button1">
+                <input type="reset" value="reset" class="button2">
+            </div>
+        </form>
+    </div>
+    <script src="iletisim.js"></script>
+</body>
+</html>

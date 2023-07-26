@@ -1,0 +1,201 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --primary-color:#22254b;
+    --secondary-color: #373b69;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: var( --primary-color);
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+}
+
+header{
+    padding:1rem;
+    display: flex;
+    justify-content:flex-end;
+    background: var(--secondary-color);
+}
+.search{
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius:50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    color: #fff;
+}
+
+.search::placeholder{
+    color:#7378c5;
+}
+search:focus{
+    outline: none;
+    background: var(--primary-color);
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie{
+    width: 300px;
+    margin: 1rem;
+    background: var(--secondary-color);
+    box-shadow: 0 4px 5px rgba(0, 0,0, .2);
+    position: relative;
+    overflow: hidden;
+    border-radius:3px;
+}
+.movie img{
+    width: 100%;
+}
+.movie-info{
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: .5rem 1rem 1rem;
+    letter-spacing: .5px;
+}
+
+
+.movie-info h3{
+    margin-top: 0;
+}
+.movie-info span{
+    background: var(--primary-color);
+    padding: .25rem .5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.movie-info span.green{
+    color:lightgreen;
+}
+.movie-info span.orange{
+    color: orange;
+}
+.movie-info span.red{
+    color:red;
+}
+
+.overview{
+    background: #fff;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY (101%);
+    transition: transform .3s ease-in;
+}
+.movie:hover .overview{
+    transform: translateY(0);
+}
+*/
+    
+/* Genel stil ve düzenlemeler */
+
+
+
+
+header{
+    background-color: #03001e;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 15%;
+}
+
+.logo{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #151415;
+}
+.navbar 
+{
+	opacity: 0.8;
+	border-bottom: 1px solid #72dee2;
+}
+
+
+.nav-item:hover {
+	color: rgb(255, 255, 255);
+}
+.jumbotron 
+{
+	padding-top: 100px;
+}
+.fa-ellipsis-v
+{
+	color: #fff;
+}
+.container.a
+{
+	color: #fff;
+}
+
+main
+{
+	font-family: 'Open Sans', sans-serif;
+}
+main img
+{
+	width: 100%;
+	height: auto;	
+}
+
+main p i
+{
+	font-size: 0.8rem;
+}
+
+.card img 
+{
+	height: 30rem;
+	width: auto;
+}
+
+.sakarya-jumbotron{
+	background-image: url(https://iasbh.tmgrup.com.tr/e47236/752/395/0/84/600/398?u=https://isbh.tmgrup.com.tr/sbh/2022/11/24/sapanca-gezilecek-yerler-yazin-ve-kisin-sapancada-ne-yapilir-gezilecek-ve-fotograf-cekilecek-yerler-nereler-k1-1669294198796.jpg);
+	background-size: cover;
+	background-position: 60% 50%;
+}
+
+.vecihiorhan-jumbortan{
+	background-image: url(https://www.tatilcity.net/wp-content/uploads/2019/07/vecihi-orhon-kapisi.jpg);
+	background-size: cover;
+	background-position: 10% 70%;
+}
+
+.acarlarlongozu-jumbortan{
+	background-image: url(https://cdnuploads.aa.com.tr/uploads/Contents/2022/07/20/thumbs_b_c_a912a1323c232650b7bbf93987634662.jpg?v=235338);
+	background-size: cover;
+	background-position: 30% 50%;
+}
+
+.sapanca-jumbortan{
+	background-image: url(https://i.cnnturk.com/i/cnnturk/75/740x416/60c2955517aca90e644bbffe.jpg);
+	background-size: cover;
+	background-position: 10% 70%;
+}
