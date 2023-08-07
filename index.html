@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>HAKKINDA</title>
+    <title>LOGIN</title>
 </head>
 <body>
     <header>
@@ -20,49 +19,39 @@
             <a href="iletisim.html">iletişim</a>
             <a href="login.html">login</a>
         </nav>
-    </header>
-
-    <section class="main">
-        <div>
-            <h2><span style="    margin-top: 3%;">Web Sayfamı Hoş Geldiniz</span></h2>
-            <h2>Merhaba, ben Kays<br><span>Mühendisim</span></h2>
-            <h3>sakarya üniversitesinde okuyorum</h3>
-            <div class="social-icons">
-                <a target="_blank" href="https://github.com/KaysHacHseyin/WebProje.git"></a>
-                <a target="_blank" href="https://github.com/KaysHacHseyin/WebProje.git"><i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="https://instagram.com/ahmet.0.o?igshid=MmJiY2I4NDBkZg=="><i class="fa-brands fa-instagram"></i></a>
-                <a target="_blank" href="https://www.facebook.com/Kays20huseyin?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="hakkında" id="hakkında">
-        <div class="head">
-            <h1>HAKKIMDA</h1>
-        </div>
-        <div class="body">
-            <h2>- bu kısımda ne anlatacam?</h2>
-            <h3>bu sayfada kendim, hobilerim, sevdim sporlar ve boş zamanlarda ne yaparım.</h3>
-            <h2>- ben kim?</h2>
-            <h3>adım Kays Alsaran, ben suriyeliyim, 19 yaşındayım.</h3>
-            <h3>sakarya üniversitesinde bilgisayar mühendisliğini okuyorum.</h3>
-            <h2>- hobilerim nelerdir?</h2>
-            <h3>anime izlemek, yüzmek,koşmak ve top oynamak.</h3>
-            <h3> ve en sevdiğim hobim kitap okumak </h3>
-            <h2>- okuduğum kitaplar</h2>
-            <h3> 
-                <ul> 
-                  <li>Suç ve ceza 1</li>  
-                  <li>Suç ve ceza 2</li>
-                  <li>Beyaz geceler</li>
-                  <li>Uzun gölge</li>
-               </ul>
-            </h3>
-            <h2>- izledim ve sevdim animeler :</h2>
-
-            <img class="one" src="images/anemi.jpg" alt="">
-            <img class="two" src="images/anemi2.jpg" alt="">
-        </div>
-    </section>
+    </header> 
+    <!--
+    <div class="login">
+        <form action="index.php" method="post">
+            <table class="table">
+                <tr>
+                    <td>Enter your email</td>
+                    <td>:</td>
+                    <td><input type="email" name="Email" required placeholder="  a@g.c..." class="email"></td>
+                </tr>
+                <tr>
+                    <td>Enter your password</td>
+                    <td>:</td>
+                    <td><input type="password" name="Pass" required placeholder="  şifre..." class="sifre"></td>
+                </tr>
+                <tr>
+                    <td ><input type="submit" value="LOGIN" class="submit"></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type="reset" value="RESET" class="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+-->
+                <form class="login" method="POST" action="index.php">
+                        <h1>Login</h1>
+                        <input type="email" name="Email" required placeholder="E-posta ...">
+                        <input type="Password" name="Pass"required placeholder="Şifre...">
+                        <div class="lost">
+                           <input type="submit" name="log" value="Login">
+                           <input type="reset" value="Reset" class="reset">
+                        </div>
+                </form>
 </body>
 </html>
