@@ -34,13 +34,15 @@ function funk() {
         alert("mail boş bırakmayınız!<br>@ operatoru kullanmanız gerekiyor!");
         return false;
     }
-    
-    c = document.forms["form"]["sifre"].value.toString();
+    /*c = document.forms["form"]["sifre"].value.toString();
     if(c != d.toString().substring(0,c.length) || c == "") 
     {
         alert("sifre hatalıdır!<br><b>sifreniz epostanızdaki @ operatorunden onceki harflerdir</b>");
         return false;
     }
+     */
+    
+    
     
     e = document.forms["form"]["cinsiyet"].value;
     if(e == "") 
